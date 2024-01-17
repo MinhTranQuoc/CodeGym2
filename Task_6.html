@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+  </head>
+  <body>
+    <script>
+      var n = Number(prompt("Mời nhập số nguyên dương n: "));
+      var N = 1;
+      for (let i = 0; i <= n; i++) {
+        if (n <= 0) {
+          break;
+        } else if (n % i !== 0) {
+          continue;
+        } else if (i === 1) {
+          continue;
+        } else {
+          var N = String(N + ", " + i);
+        }
+      }
+      if (N === 1) {
+        alert("Bạn đã nhập sai giá trị");
+      } else {
+        alert("Các ước số của số nguyên dương " + n + " là: " + N);
+      }
+    </script>
+  </body>
+</html>
