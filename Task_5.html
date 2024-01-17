@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <script>
+      var iPhonePrice = Number(prompt("Mời nhập tiền điện thoại: "));
+      var backupchargePrice = Number(
+        prompt("Mời nhập tiền của sạc dự phòng: ")
+      );
+      var promotion = Number(prompt("Trị giá được khuyến mãi: "));
+      const TAX = 8 / 100;
+      confirm("Bạn đã nhập đầy đủ các thông tin món hàng chưa?");
+      var totalTax = Number((iPhonePrice + backupchargePrice) * TAX);
+      var totalPrice = iPhonePrice + backupchargePrice + totalTax - promotion;
+      alert("Tổng tiền cần phải thanh toán: " + totalPrice);
+      console.log(" Tổng tiền cần phải thanh toán: " + totalPrice);
+    </script>
+  </body>
+</html>
